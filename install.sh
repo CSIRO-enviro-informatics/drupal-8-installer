@@ -1,11 +1,18 @@
 # following https://websiteforstudents.com/install-drupal-cms-ubuntu-17-04-17-10/
 
-sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove
+sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get -y autoremove
 sudo apt-get install -y apache2
 sudo apt-get install -y mysql-server mysql-client
 # MySQL root password: drupalrocks
 
 mysql -u root -pdrupalrocks
+# execute MySQL commands starting '>'
+> CREATE DATABASE drupal;
+> CREATE USER drupaluser@localhost IDENTIFIED BY 'xxx';
+> GRANT ALL ON drupal.* TO drupaluser@localhost;
+> FLUSH PRIVILEGES;
+> exit
+
 sudo apt-get install -y php libapache2-mod-php php-mysql php-xml php-mysql php-curl php-gd php-imagick php-imap php-mcrypt$
 wget ftp.drupal.org/files/projects/drupal-8.5.5.tar.gz
 tar xzvf drupal*
