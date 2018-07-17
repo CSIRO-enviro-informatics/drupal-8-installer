@@ -7,7 +7,7 @@ Before installing this Module, or any other required modules, make sure you have
 - Apache 2: 
   - "sudo apt-get install apache2"
 - MySQL Server and Client: 
-  -"sudo apt-get install mysql-server mysql-client"
+  - "sudo apt-get install mysql-server mysql-client"
 
 
 
