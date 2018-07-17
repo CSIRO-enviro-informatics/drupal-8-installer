@@ -8,6 +8,7 @@ Before installing this Module, or any other required modules, make sure you have
   - "sudo apt-get install apache2"
 - MySQL Server and Client: 
   - "sudo apt-get install mysql-server mysql-client"
+  - Note: Further information on configuration of MySQL is discussed in this article if needed https://websiteforstudents.com/install-drupal-cms-ubuntu-17-04-17-10/
 
 
 
