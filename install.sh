@@ -13,9 +13,10 @@ mysql -u root -pdrupalrocks
 > FLUSH PRIVILEGES;
 > exit
 
-sudo apt-get install -y php libapache2-mod-php php-mysql php-xml php-mysql php-curl php-gd php-imagick php-imap php-mcrypt$
+sudo apt-get install -y php libapache2-mod-php php-mysql php-xml php-mysql php-curl php-gd php-imagick php-imap php-mcrypt php-recode php-tidy php-xmlrpc
 wget ftp.drupal.org/files/projects/drupal-8.5.5.tar.gz
 tar xzvf drupal*
+sudo mv drupal-8.5.5/* /var/www/html/
 sudo cp /var/www/html/sites/default/default.settings.php /var/www/html/sites/default/settings.php
 sudo chmod -R 755 /var/www/html/*
 sudo chown -R www-data:www-data /var/www/html/*
@@ -32,8 +33,6 @@ sudo nano /etc/apache2/sites-enabled/000-default.conf
            Options FollowSymlinks
            AllowOverride All
            Require all granted
-      </Directory>
-      <Directory /var/www/html/>
            RewriteEngine on
            RewriteBase /
            RewriteCond %{REQUEST_FILENAME} !-f
@@ -42,5 +41,8 @@ sudo nano /etc/apache2/sites-enabled/000-default.conf
       </Directory>
 </VirtualHost>
 ---
+sudo rm /var/www/html/index.html
 sudo a2enmod rewrite
 sudo service apache2 restart
+
+# continue config at Drupal HTML config page, http://localhost
