@@ -2,9 +2,9 @@
 
 ### Install and use guide
 
-Before installing this Module, or any other required modules, make sure you have the following installed (terminal commands included):
-
 #### Note: For a more in depth install guide, refer to and follow this article https://websiteforstudents.com/install-drupal-cms-ubuntu-17-04-17-10/
+
+Before installing this Module, or any other required modules, make sure you have the following installed (terminal commands included):
 
 - Apache 2: 
   - "sudo apt-get install apache2"
