@@ -31,3 +31,33 @@ The final module to be added is the 'person' module.
   - Move it to to the modules folder of your Drupal installation (In this instance, move it to /var/www/html/modules)
   
   - After this module has been installed, go back to the "Extend" tab, tick the modules that were installed, and then click install at the bottom to finalise.
+
+### Configuring
+
+Starting with a fresh Drupal 8 install, and all Modules added in previous steps...
+
+1. Go to the configuration pages and under web services open the REST configuration
+
+2. Enable Content and select edit
+
+3. Set Granularity to resource and check the GET box under methods
+
+4. Check jsonld and json under Accepted request formats
+
+5. Check basic_auth and cookie under Authentication providers
+
+6. Go to the Content menu and Add content
+
+7. Select person and then fill out the details of your person and save
+
+8. This will bring up the newly create node
+
+9. In the address bar `http://localhost:8080/drupal/node/1` add the format URL query string with type JSON-LD: `?_format=jsonld` -> `http://localhost:8080/drupal/node/1?_format=jsonld`
+
+  This will expose the JSON-LD Data.
+
+10. Module is currently mapped to both schema.org/person and xmlns.com/foaf/0.1/person
+
+11. The title field is mapped to FOAF name the rest are mapped to schema.org
+
+12. Mappings can be viewed in the file rdf.mapping.node.person.yml found under person/config/install/
