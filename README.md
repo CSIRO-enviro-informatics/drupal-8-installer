@@ -2,7 +2,7 @@
 
 ### Install and use guide
 
-#### Note: For a more in depth install guide, refer to and follow this article https://websiteforstudents.com/install-drupal-cms-ubuntu-17-04-17-10/
+#### Note: For a more in depth install guide of the initial Drupal 8 set up, refer to and follow this article https://websiteforstudents.com/install-drupal-cms-ubuntu-17-04-17-10/
 
 Before installing this module, or any other required modules, make sure you have the following installed (these resources are installed using the above guide, or refer to install.sh script):
 
@@ -23,3 +23,11 @@ After these modules have been enabled, install the following modules (refer to t
 - REST UI from https://www.drupal.org/project/restui
 - JSON-LD from https://github.com/Islandora-CLAW/jsonld
   - Note: There is unkown bug encountered in uploading a .zip compressed module for JSON-LD. If this bug is encountered, extract JSON-LD from the downloaded .zip, then re-compress with .tar.gz, then upload > install.
+
+The final module to be added is the 'person' module. 
+  - Download the 'person' folder from this repository 
+  - Move it to to the modules folder of your Drupal installation (In this instance, move it to /var/www/html/modules)
+  - Go to your open Drupal root in a web browser (in this instance, localhost:80)
+  - Click extend
+  - tick the person module
+  - click install
