@@ -23,11 +23,11 @@ After these modules have been enabled, install the following modules (refer to t
 - REST UI from https://www.drupal.org/project/restui
 - JSON-LD from https://github.com/Islandora-CLAW/jsonld
   - Note: There is unkown bug encountered in uploading a .zip compressed module for JSON-LD. If this bug is encountered, extract JSON-LD from the downloaded .zip, then re-compress with .tar.gz, then upload > install.
+ 
+- After these modules have been installed, go back to the "Extend" tab, tick the modules that were installed, and then click install at the bottom to finalise.
 
 The final module to be added is the 'person' module. 
   - Download the 'person' folder from this repository 
   - Move it to to the modules folder of your Drupal installation (In this instance, move it to /var/www/html/modules)
-  - Go to your open Drupal root in a web browser (in this instance, localhost:80)
-  - Click extend
-  - tick the person module
-  - click install
+  
+  - After this module has been installed, go back to the "Extend" tab, tick the modules that were installed, and then click install at the bottom to finalise.
