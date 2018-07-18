@@ -22,4 +22,4 @@ After these modules have been enabled, install the following modules (refer to t
 
 - REST UI from https://www.drupal.org/project/restui
 - JSON-LD from https://github.com/Islandora-CLAW/jsonld
-  - Note: There is unkown bug encountered in uploading a .zip compressed module for JSON-LD. If this bug is encountered, extract JSON-LD on your desktop, then compress with .tar.gz, then upload > install.
+  - Note: There is unkown bug encountered in uploading a .zip compressed module for JSON-LD. If this bug is encountered, extract JSON-LD from the downloaded .zip, then re-compress with .tar.gz, then upload > install.
