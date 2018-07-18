@@ -52,7 +52,7 @@ Starting with a fresh Drupal 8 install, and all Modules added in previous steps.
 
 8. This will bring up the newly create node
 
-9. In the address bar `http://localhost:8080/drupal/node/1` add the format URL query string with type JSON-LD: `?_format=jsonld` -> `http://localhost:8080/drupal/node/1?_format=jsonld`
+9. In the address bar `http://localhost/node/1` add the format URL query string with type JSON-LD: `?_format=jsonld` -> `http://localhost/node/1?_format=jsonld`
 
   This will expose the JSON-LD Data.
 
