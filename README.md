@@ -11,9 +11,15 @@ Before installing this module, or any other required modules, make sure you have
 - PHP
 - Drupal 8
 
-After Drupal 8 has been installed and configured, click "extend" and install the following modules:
+After Drupal 8 has been installed and configured, click "extend" and enable the following core modules:
 
 - RESTful Web Services
 - Serialization
 - HTTP Basic Authentication
 - RDF (this should already be installed)
+
+After these modules have been enabled, install the following modules (refer to the following for installing new modules: https://www.drupal.org/docs/user_guide/en/extend-module-install.html ) : 
+
+- REST UI from https://www.drupal.org/project/restui
+- JSON-LD from https://github.com/Islandora-CLAW/jsonld
+  - Note: There is unkown bug encountered in uploading a .zip compressed module for JSON-LD. If this bug is encountered, extract JSON-LD on your desktop, then compress with .tar.gz, then upload > install.
