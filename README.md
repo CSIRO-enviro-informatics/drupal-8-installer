@@ -2,7 +2,7 @@
 
 ### Install and use guide
 
-#### NOTE: If you want to use Drush with Drupal 8, you need version 6 or greater.
+#### NOTE: If you want to use Drush with Drupal 8, you need version 8 or greater.
 
 #### Note: For a more in depth install guide of the initial Drupal 8 set up, refer to and follow this article https://websiteforstudents.com/install-drupal-cms-ubuntu-17-04-17-10/
 
