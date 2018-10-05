@@ -1,0 +1,5 @@
+name: Semantic Mapping Tool
+description: A tool to map machine readable types to items
+package: Semantic
+type: module
+core: 8.x
